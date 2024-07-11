@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { inserindoVagas, retotnarVagas, buscarApoio, buscarPorTipo, excluirVaga } from "../controllers/oportunidades.controller";
+import { inserindoVagas, retotnarVagas, buscarApoio, buscarPorTipo, excluirVaga } from "../controllers/oportunidades.controller.js";
 
-const router = express.Router()
+const router = Router()
 
 router.post("/vagas", (req, res) =>{
     const {tipo, titulo, descricao, link} = req.body;
@@ -9,7 +9,7 @@ router.post("/vagas", (req, res) =>{
     res.json({novaVaga})
 })
 
-router.length("/vagas", (req, res)=>{
+router.get("/vagas", (req, res)=>{
     const listaVaga = retotnarVagas()
     res.json({listaVaga})
 })
@@ -32,4 +32,4 @@ router.delete('/vagas/:id', (req, res) => {
     res.json(vagaExcluida);
   });
 
-  export {oportunidadeRouter}
+  export {router}

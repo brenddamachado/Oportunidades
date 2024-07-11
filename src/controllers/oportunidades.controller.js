@@ -1,4 +1,4 @@
-import { Vagas } from "../models/oportunidades.model";
+import { Vagas } from "../models/oportunidades.model.js";
 
 let listaVagas = [];
 

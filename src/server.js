@@ -1,12 +1,12 @@
 import express from "express"
-import { oportunidadeRouter } from "./routes/oportunidades.router"
+import { router } from "./routes/oportunidades.router.js"
 
 const app = express()
 const port = 3000
 
 app.use(express.json())
 
-app.use(oportunidadeRouter)
+app.use(router)
 
 app.listen(port, () =>{
     console.log(`Example app listening on port ${port}`)
