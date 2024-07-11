@@ -1,6 +1,11 @@
 import { Vagas } from "../models/oportunidades.model.js";
 
-let listaVagas = [];
+let listaVagas = [
+    new Vagas('apoio', 'Auxílio Desemprego', 'Benefício financeiro para desempregados.', 'https://apoio.com/auxilio-desemprego'),
+    new Vagas('apoio', 'Bolsa de Estudos', 'Bolsa de estudos para cursos de capacitação.', 'https://apoio.com/bolsa-estudos'),
+    new Vagas('estágio', "Desenvolvedor web", 'Vaga para estagiario do 3º período em diante', 'https://www.gupy.io/'),
+    new Vagas('curso', 'Pacote Office', 'Curso de pacote office gratuito.', 'https://www.rj.senac.br/'),
+];
 
 
 export const inserindoVagas = (tipo, titulo, descricao, link) =>{
