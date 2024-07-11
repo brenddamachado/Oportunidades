@@ -31,3 +31,5 @@ router.delete('/vagas/:id', (req, res) => {
     }
     res.json(vagaExcluida);
   });
+
+  export {oportunidadeRouter}
