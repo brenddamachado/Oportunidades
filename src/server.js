@@ -11,4 +11,4 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 
-export { app }; // Certifique-se de exportar o `app` para testes
+export { app };
